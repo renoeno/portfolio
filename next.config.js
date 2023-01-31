@@ -9,4 +9,8 @@ module.exports = {
   experimental: {
     outputStandalone: true,
   },
+  images: {
+    domains: ['media.graphassets.com'],
+  },
+
 };

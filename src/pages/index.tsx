@@ -1,39 +1,17 @@
 import { gql } from '@apollo/client';
 import { GetStaticProps } from 'next';
 import client from '../../apolloClient';
-
-type ProjectProps = {
-  id: string;
-  description: string;
-  projectUrl: string;
-  tags: string;
-  title: string;
-  year: number;
-  image: {
-    url: string;
-  };
-};
-
-type AboutProps = {
-  aboutMe: string;
-  aboutMePicture: {
-    url: string;
-  };
-};
-
-type HomeProps = {
-  projects: ProjectProps[];
-  abouts: AboutProps[];
-};
+import { AboutSection } from '../modules/about/components/AboutSection';
+import { HomeTitle } from '../modules/homePage/components/HomeSection';
+import { ProjectsSection } from '../modules/project/components/ProjectsSection';
+import { HomeProps } from '../types';
 
 export default function Home({ projects, abouts }: HomeProps) {
   return (
     <>
-      <ul>
-        {projects.map((project) => {
-          return <li key={project.id}>{project.title}</li>;
-        })}
-      </ul>
+      <HomeTitle />
+      <ProjectsSection projects={projects} />
+      <AboutSection about={abouts[0]} />
     </>
   );
 }
