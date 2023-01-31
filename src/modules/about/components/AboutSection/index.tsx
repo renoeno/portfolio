@@ -12,14 +12,18 @@ import {
 import { AboutProps } from '../../../../types';
 import Image from 'next/image';
 import { GithubLogo, LinkedinLogo, At, InstagramLogo } from 'phosphor-react';
+import { useThemeContext } from '../../../../contexts/ThemeContext';
+import { darkTheme } from '../../../../styles';
 
 type AboutSectionProps = {
   about: AboutProps;
 };
 
 export function AboutSection({ about }: AboutSectionProps) {
+  const { dark } = useThemeContext();
+
   return (
-    <AboutWrapper id="about-section">
+    <AboutWrapper id="about-section" className={dark ? darkTheme : ''}>
       <TitleContainer>
         <Heading decoration="italic" size="sm">
           Quem é Reno

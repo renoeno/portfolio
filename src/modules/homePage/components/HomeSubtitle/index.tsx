@@ -1,3 +1,4 @@
+import { useThemeContext } from '../../../../contexts/ThemeContext';
 import { Heading } from '../Heading';
 import {
   SubtitleContainer,

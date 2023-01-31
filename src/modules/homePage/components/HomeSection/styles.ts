@@ -26,6 +26,7 @@ const onEnterUpBottom = keyframes({
 });
 
 export const HomeTitleWrapper = styled('div', {
+  background: '$background',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-end',

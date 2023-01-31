@@ -5,6 +5,7 @@ export const Heading = styled('h2', {
   lineHeight: '$shorter',
   textTransform: 'lowercase',
   margin: 0,
+  color: '$text',
 
   variants: {
     size: {

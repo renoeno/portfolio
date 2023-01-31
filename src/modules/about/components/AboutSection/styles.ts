@@ -4,6 +4,7 @@ export const AboutWrapper = styled('div', {
   width: '100%',
   minHeight: '100vh',
   padding: '$8 $16 0 $16',
+  background: '$background',
 
   '@bp3': {
     padding: '0 $8',
@@ -49,6 +50,7 @@ export const Description = styled('p', {
   fontSize: '$xl',
   lineHeight: '$shorter',
   marginBottom: '$4',
+  color: '$text',
 
   width: '100%',
 });
@@ -66,6 +68,7 @@ export const ImageContainer = styled('div', {
 export const Icons = styled('div', {
   display: 'flex',
   justifyContent: 'flex-end',
+  color: '$text',
 });
 
 export const ContactLink = styled('a', {

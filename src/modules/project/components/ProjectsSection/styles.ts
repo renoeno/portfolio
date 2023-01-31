@@ -1,9 +1,9 @@
 import { styled } from '../../../../styles';
 
 export const ProjectWrapper = styled('div', {
+  background: '$background',
   width: '100%',
   padding: '0 $16',
-  marginBottom: '$8',
 
   '& ul': {
     listStyle: 'none',

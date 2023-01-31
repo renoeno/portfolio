@@ -17,6 +17,7 @@ export const Description = styled('p', {
   fontSize: '$xl',
   lineHeight: '$shorter',
   marginBottom: '$4',
+  color: '$text',
 });
 
 export const InfoContainer = styled('div', {
@@ -52,6 +53,7 @@ export const Tag = styled('span', {
   fontFamily: '$headings',
   fontStyle: 'italic',
   paddingRight: '$2',
+  color: '$text',
 
   '@bp3': {
     fontSize: '$md',

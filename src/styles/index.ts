@@ -1,5 +1,5 @@
 import { createStitches, defaultThemeMap } from '@stitches/react';
-import { fonts, fontWeights, fontSizes, lineHeights, colors, space } from './tokens';
+import { fonts, fontWeights, fontSizes, lineHeights, colors, space, colorsDark } from './tokens';
 
 export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme, config } =
   createStitches({
@@ -23,6 +23,10 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
       bp3: '(max-width: 920px)',
     },
   });
+
+export const darkTheme = createTheme('dark-theme', {
+  colors: colorsDark,
+});
 
 export const globalStyles = globalCss({
   '*': { boxSizing: 'border-box', margin: 0, padding: 0 },

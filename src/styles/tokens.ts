@@ -3,6 +3,11 @@ export const colors = {
   text: '#0E0E2C',
 };
 
+export const colorsDark = {
+  background: '#0E0E2C',
+  text: '#FAFAFA',
+};
+
 export const fontSizes = {
   xxs: '0.625rem',
   xs: '0.75rem',

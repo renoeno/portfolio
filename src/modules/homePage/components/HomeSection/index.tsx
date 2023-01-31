@@ -1,12 +1,18 @@
+import { useThemeContext } from '../../../../contexts/ThemeContext';
+import { darkTheme } from '../../../../styles';
 import { Heading } from '../Heading';
 import { HomeSubtitle } from '../HomeSubtitle';
 import { Navigation } from '../Navigation';
+import { ThemeToggler } from '../ThemeToggler';
 import { HomeTitleWrapper, TitleContainer, FirstNameContainer, LastNameContainer } from './styles';
 
 export function HomeTitle() {
+  const { dark } = useThemeContext();
+
   return (
     <>
-      <HomeTitleWrapper>
+      <HomeTitleWrapper className={dark ? darkTheme : ''}>
+        <ThemeToggler />
         <HomeSubtitle />
         <TitleContainer>
           <FirstNameContainer css={{ animationDelay: '0.125s' }}>
