@@ -30,10 +30,18 @@ export const SubtitleWrapper = styled('div', {
   display: 'flex',
   justifyContent: 'flex-end',
   animation: `${onEnterSubtitle} 0.25s ease-in-out`,
+
+  '@bp3': {
+    justifyContent: 'center',
+  },
 });
 
 export const SubtitleContainer = styled('span', {
   width: 440,
+
+  '@bp3': {
+    textAlign: 'center',
+  },
 });
 
 export const FirstQuoteSubtitleContainer = styled('div', {

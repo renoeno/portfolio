@@ -8,4 +8,13 @@ export const ProjectWrapper = styled('div', {
   '& ul': {
     listStyle: 'none',
   },
+
+  '@bp3': {
+    padding: '0 $8',
+    textAlign: 'center',
+  },
+
+  '@bp1': {
+    padding: '0 $4',
+  },
 });

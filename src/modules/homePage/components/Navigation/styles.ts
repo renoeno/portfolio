@@ -18,6 +18,11 @@ export const MenuWrapper = styled('div', {
   width: '100%',
   display: 'flex',
   justifyContent: 'flex-start',
+
+  '@bp3': {
+    justifyContent: 'center',
+    textAlign: 'center',
+  },
 });
 
 export const MenuContainer = styled('div', {

@@ -34,7 +34,13 @@ export const HomeTitleWrapper = styled('div', {
   height: '100vh',
   padding: '0 $16',
 
-  '@bp1': {},
+  '@bp3': {
+    padding: '0 $8',
+  },
+
+  '@bp1': {
+    padding: '0 $4',
+  },
 });
 
 export const TitleContainer = styled('div', {
@@ -43,11 +49,21 @@ export const TitleContainer = styled('div', {
   height: 320,
   margin: '0 auto',
   animation: `${onEnterTitle} 0.25s ease-in-out`,
+
+  '@bp3': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
 
 export const FirstNameContainer = styled('div', {
   position: 'absolute',
   animation: `${onEnterUpBottom} 0.5s ease-in-out`,
+
+  '@bp3': {
+    position: 'relative',
+  },
 });
 
 export const LastNameContainer = styled('div', {
@@ -55,4 +71,10 @@ export const LastNameContainer = styled('div', {
   left: '13.5rem',
   top: '4.875rem',
   animation: `${onEnterUpBottom} 0.5s ease-in-out`,
+
+  '@bp3': {
+    position: 'relative',
+    left: 0,
+    top: 0,
+  },
 });

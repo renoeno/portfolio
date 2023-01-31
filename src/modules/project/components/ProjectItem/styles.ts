@@ -6,6 +6,10 @@ export const ProjectWrapper = styled('div', {
   '& ul': {
     listStyle: 'none',
   },
+
+  '@bp3': {
+    marginBottom: '$2',
+  },
 });
 
 export const Description = styled('p', {
@@ -15,21 +19,43 @@ export const Description = styled('p', {
   marginBottom: '$4',
 });
 
+export const InfoContainer = styled('div', {
+  '@bp3': {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+});
+
 export const TitleContainer = styled('div', {
   padding: '$4 0 $2 0',
   display: 'flex',
   alignItems: 'baseline',
   marginBottom: '$2',
+
+  '@bp3': {
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
 
 export const Title = styled('div', {
   marginRight: '$8',
+
+  '@bp3': {
+    marginBottom: 0,
+  },
 });
 
 export const Tag = styled('span', {
   fontFamily: '$headings',
   fontStyle: 'italic',
   paddingRight: '$2',
+
+  '@bp3': {
+    fontSize: '$md',
+  },
 });
 
 export const LinkContainer = styled('div', {
@@ -62,10 +88,19 @@ export const ProjectLink = styled('a', {
     //left: 25%;
     width: '35%',
   },
+
+  '@bp3': {
+    fontSize: '$md',
+  },
 });
 
 export const ImageContainer = styled('div', {
   width: '75%',
   height: 540,
   position: 'relative',
+
+  '@bp3': {
+    width: '100%',
+    height: 320,
+  },
 });

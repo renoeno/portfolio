@@ -10,6 +10,7 @@ import {
   TitleContainer,
   Title,
   Tag,
+  InfoContainer,
 } from './styles';
 
 type ProjectItemProps = {
@@ -25,17 +26,20 @@ export function ProjectItem({ project }: ProjectItemProps) {
 
   return (
     <ProjectWrapper>
-      <TitleContainer>
-        <Title>
-          <Heading decoration="italic" size="sm">
-            {project.title}
-          </Heading>
-        </Title>
-        {projectTags}
-      </TitleContainer>
-      <LinkContainer>
-        <ProjectLink href={project.projectUrl}>{project.projectUrl}</ProjectLink>
-      </LinkContainer>
+      <InfoContainer>
+        <TitleContainer>
+          <Title>
+            <Heading decoration="italic" size="sm">
+              {project.title}
+            </Heading>
+          </Title>
+          {projectTags}
+        </TitleContainer>
+
+        <LinkContainer>
+          <ProjectLink href={project.projectUrl}>{project.projectUrl}</ProjectLink>
+        </LinkContainer>
+      </InfoContainer>
       <Description>{project.description}</Description>
       <div
         style={{

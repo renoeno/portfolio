@@ -17,8 +17,9 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
       space: space,
     },
     media: {
+      bp0: '(max-width: 480px)',
       bp1: '(max-width: 640px)',
-      bp2: '(min-width: 768px)',
+      bp2: '(max-width: 768px)',
       bp3: '(max-width: 920px)',
     },
   });

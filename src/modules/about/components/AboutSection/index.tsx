@@ -7,6 +7,7 @@ import {
   Icons,
   DescriptionContainer,
   ContactLink,
+  AboutContainer,
 } from './styles';
 import { AboutProps } from '../../../../types';
 import Image from 'next/image';
@@ -24,11 +25,16 @@ export function AboutSection({ about }: AboutSectionProps) {
           Quem é Reno
         </Heading>
       </TitleContainer>
-      <div
-        style={{
-          display: 'flex',
-        }}
-      >
+      <AboutContainer>
+        <ImageContainer>
+          <Image
+            src={about.aboutMePicture[0].url}
+            alt=""
+            title=""
+            layout="fill"
+            objectFit="contain"
+          />
+        </ImageContainer>
         <DescriptionContainer>
           <Description>{about.aboutMe}</Description>
           <Icons>
@@ -46,17 +52,7 @@ export function AboutSection({ about }: AboutSectionProps) {
             </ContactLink>
           </Icons>
         </DescriptionContainer>
-
-        <ImageContainer>
-          <Image
-            src={about.aboutMePicture[0].url}
-            alt=""
-            title=""
-            layout="fill"
-            objectFit="contain"
-          />
-        </ImageContainer>
-      </div>
+      </AboutContainer>
     </AboutWrapper>
   );
 }
