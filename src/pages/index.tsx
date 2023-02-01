@@ -3,12 +3,14 @@ import { GetStaticProps } from 'next';
 import client from '../../apolloClient';
 import { AboutSection } from '../modules/about/components/AboutSection';
 import { HomeTitle } from '../modules/homePage/components/HomeSection';
+import { ThemeToggler } from '../modules/homePage/components/ThemeToggler';
 import { ProjectsSection } from '../modules/project/components/ProjectsSection';
 import { HomeProps } from '../types';
 
 export default function Home({ projects, abouts }: HomeProps) {
   return (
     <>
+      <ThemeToggler />
       <HomeTitle />
       <ProjectsSection projects={projects} />
       <AboutSection about={abouts[0]} />

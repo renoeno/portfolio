@@ -1,7 +1,7 @@
 import { SunDim, Moon } from 'phosphor-react';
 import { useThemeContext } from '../../../../contexts/ThemeContext';
 import { darkTheme } from '../../../../styles';
-import { IconContainer, SwitchRoot, SwitchThumb } from './styles';
+import { IconContainer, SwitchRoot, SwitchThumb, ToggleContainer, TogglerWrapper } from './styles';
 
 export function ThemeToggler() {
   const { dark, toggleTheme } = useThemeContext();
@@ -13,18 +13,23 @@ export function ThemeToggler() {
 
   return (
     <>
-      <form>
-        <div style={{ display: 'flex', alignItems: 'baseline' }}>
-          <label className="Label" htmlFor="airplane-mode" style={{ paddingRight: 15 }}>
+      <TogglerWrapper className={dark ? darkTheme : ''}>
+        <ToggleContainer>
+          <label className="Label" htmlFor="airplane-mode" style={{ paddingRight: 8 }}>
             <IconContainer className={dark ? darkTheme : ''}>
               {dark ? <SunDim /> : <Moon />}
             </IconContainer>
           </label>
-          <SwitchRoot className={dark ? darkTheme : ''} onClick={handleToggle} id="airplane-mode">
+          <SwitchRoot
+            checked={dark}
+            className={dark ? darkTheme : ''}
+            onClick={handleToggle}
+            id="airplane-mode"
+          >
             <SwitchThumb className={dark ? darkTheme : ''} />
           </SwitchRoot>
-        </div>
-      </form>
+        </ToggleContainer>
+      </TogglerWrapper>
     </>
   );
 }

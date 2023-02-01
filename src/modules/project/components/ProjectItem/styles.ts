@@ -16,7 +16,7 @@ export const Description = styled('p', {
   fontFamily: '$text',
   fontSize: '$xl',
   lineHeight: '$shorter',
-  marginBottom: '$4',
+  marginBottom: '$8',
   color: '$text',
 });
 

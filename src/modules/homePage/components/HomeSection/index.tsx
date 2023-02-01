@@ -12,7 +12,6 @@ export function HomeTitle() {
   return (
     <>
       <HomeTitleWrapper className={dark ? darkTheme : ''}>
-        <ThemeToggler />
         <HomeSubtitle />
         <TitleContainer>
           <FirstNameContainer css={{ animationDelay: '0.125s' }}>
