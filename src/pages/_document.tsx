@@ -7,6 +7,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link
             href="https://api.fontshare.com/v2/css?f[]=satoshi@500,401,400&f[]=bespoke-serif@400,401&display=swap"
             rel="stylesheet"
