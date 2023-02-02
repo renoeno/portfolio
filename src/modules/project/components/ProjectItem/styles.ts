@@ -18,6 +18,14 @@ export const Description = styled('p', {
   lineHeight: '$shorter',
   marginBottom: '$8',
   color: '$text',
+
+  '@bp3': {
+    fontSize: '$lg',
+  },
+
+  '@bp2': {
+    fontSize: '$md',
+  },
 });
 
 export const InfoContainer = styled('div', {
@@ -45,7 +53,8 @@ export const Title = styled('div', {
   marginRight: '$8',
 
   '@bp3': {
-    marginBottom: 0,
+    marginBottom: '$4',
+    marginRight: 0,
   },
 });
 
@@ -54,10 +63,6 @@ export const Tag = styled('span', {
   fontStyle: 'italic',
   paddingRight: '$2',
   color: '$text',
-
-  '@bp3': {
-    fontSize: '$md',
-  },
 });
 
 export const LinkContainer = styled('div', {
@@ -93,6 +98,10 @@ export const ProjectLink = styled('a', {
 
   '@bp3': {
     fontSize: '$md',
+  },
+
+  '@bp2': {
+    fontSize: '$sm',
   },
 });
 
