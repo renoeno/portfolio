@@ -1,5 +1,6 @@
 import { gql } from '@apollo/client';
 import { GetStaticProps } from 'next';
+import Head from 'next/head';
 import client from '../../apolloClient';
 import { AboutSection } from '../modules/about/components/AboutSection';
 import { HomeTitle } from '../modules/homePage/components/HomeSection';
@@ -10,6 +11,11 @@ import { HomeProps } from '../types';
 export default function Home({ projects, abouts }: HomeProps) {
   return (
     <>
+      <Head>
+        <title>Portfolio de Reno Almeida</title>
+        <meta name="description" content="Portfolio de Reno Almeida" />
+        <link rel="icon" href="/favicon.svg" />
+      </Head>
       <ThemeToggler />
       <HomeTitle />
       <ProjectsSection projects={projects} />

@@ -1,5 +1,6 @@
 import Document from 'next/document';
 import { Html, Head, Main, NextScript } from 'next/document';
+import { getCssText } from '../styles';
 
 export default class MyDocument extends Document {
   render() {
@@ -12,6 +13,7 @@ export default class MyDocument extends Document {
           />
 
           <link rel="shortcut icon" href="/favicon.svg" />
+          <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
         </Head>
         <body>
           <Main />
