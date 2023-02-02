@@ -25,6 +25,7 @@ export const Description = styled('p', {
 
   '@bp2': {
     fontSize: '$md',
+    marginBottom: '$2',
   },
 });
 
@@ -113,5 +114,10 @@ export const ImageContainer = styled('div', {
   '@bp3': {
     width: '100%',
     height: 320,
+  },
+
+  '@bp1': {
+    width: '100%',
+    height: 240,
   },
 });
