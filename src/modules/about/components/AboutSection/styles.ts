@@ -53,6 +53,11 @@ export const Description = styled('p', {
   color: '$text',
 
   width: '100%',
+
+  '@bp2': {
+    fontSize: '$md',
+    marginBottom: '$2',
+  },
 });
 
 export const ImageContainer = styled('div', {
