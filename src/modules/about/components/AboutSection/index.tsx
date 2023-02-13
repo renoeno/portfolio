@@ -10,7 +10,7 @@ import {
   AboutContainer,
 } from './styles';
 import { AboutProps } from '../../../../types';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { GithubLogo, LinkedinLogo, At, InstagramLogo } from 'phosphor-react';
 import { useThemeContext } from '../../../../contexts/ThemeContext';
 import { darkTheme } from '../../../../styles';
@@ -35,6 +35,7 @@ export function AboutSection({ about }: AboutSectionProps) {
             src={about.aboutMePicture[0].url}
             alt=""
             title=""
+            sizes="100%"
             layout="fill"
             objectFit="contain"
           />

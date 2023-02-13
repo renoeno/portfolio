@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { ProjectProps } from '../../../../types';
 import { Heading } from '../../../homePage/components/Heading';
 import {
@@ -52,8 +52,7 @@ export function ProjectItem({ project }: ProjectItemProps) {
             src={project.image[0].url}
             alt=""
             title=""
-            width="100%"
-            height="100%"
+            sizes="100%"
             layout="fill"
             objectFit="contain"
           />

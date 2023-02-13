@@ -64,7 +64,7 @@ export const ImageContainer = styled('div', {
   width: '100%',
   height: 480,
   position: 'relative',
-
+  objectFit: 'contain',
   '@bp2': {
     height: 320,
   },
