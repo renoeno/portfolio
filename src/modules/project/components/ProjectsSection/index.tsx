@@ -10,7 +10,10 @@ type ProjectsSectionProps = {
 
 export function ProjectsSection({ projects }: ProjectsSectionProps) {
   const { dark } = useThemeContext();
-  const projectsList = projects.map((project) => (
+  let sortList = [...projects];
+  sortList.sort((a, b) => (a.year < b.year ? 1 : b.year < a.year ? -1 : 0));
+
+  const projectsList = sortList.map((project) => (
     <li key={project.id}>
       <ProjectItem project={project} />
     </li>
