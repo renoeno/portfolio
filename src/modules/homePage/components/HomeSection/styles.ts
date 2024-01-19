@@ -45,48 +45,35 @@ export const HomeTitleWrapper = styled('div', {
 });
 
 export const TitleContainer = styled('div', {
-  position: 'relative',
+  display: 'flex',
+  justifyContent: 'center',
+  flexDirection: 'column',
+  overflow: 'hidden',
   width: '100%',
-  height: 320,
+  height: 480,
   margin: '0 auto',
   animation: `${onEnterTitle} 0.25s ease-in-out`,
 
-  '@bp3': {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+  '@bp1': {
+    flexDirection: 'column',
   },
 });
 
 export const FirstNameContainer = styled('div', {
-  position: 'absolute',
-  left: '-6.125rem',
-  top: '-4.875rem',
+  width: '100%',
+  display: 'flex',
+  justifyContent: 'flex-start',
   animation: `${onEnterUpBottom} 0.5s ease-in-out`,
-
-  '@bp3': {
-    left: '-3.125rem',
-    top: '-1.75rem',
-  },
-
-  '@bp0': {
-    left: '-1.4rem',
-    top: '4.45rem',
-  },
 });
 
 export const LastNameContainer = styled('div', {
-  position: 'absolute',
-  left: '20rem',
-  top: '4.875rem',
+  width: '100%',
+  display: 'flex',
+  justifyContent: 'flex-end',
+  marginTop: '-8rem',
   animation: `${onEnterUpBottom} 0.5s ease-in-out`,
 
-  '@bp3': {
-    left: '14.575rem',
-  },
-
-  '@bp0': {
-    left: '5.35rem',
-    top: '6.875rem',
+  '@bp1': {
+    marginTop: '-4rem',
   },
 });

@@ -21,7 +21,8 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
       bp1: '(max-width: 640px)',
       bp2: '(max-width: 768px)',
       bp3: '(max-width: 920px)',
-      bp4: '(max-width: 1215px)',
+      bp4: '(max-width: 1280px)',
+      bp5: '(max-width: 1536px)',
     },
   });
 

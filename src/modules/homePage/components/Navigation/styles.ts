@@ -23,6 +23,10 @@ export const MenuWrapper = styled('div', {
     justifyContent: 'center',
     textAlign: 'center',
   },
+
+  '@bp1': {
+    marginTop: '1rem',
+  },
 });
 
 export const MenuContainer = styled('div', {
