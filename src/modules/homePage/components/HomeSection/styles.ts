@@ -56,6 +56,7 @@ export const TitleContainer = styled('div', {
 
   '@bp1': {
     flexDirection: 'column',
+    height: 320,
   },
 });
 
@@ -73,7 +74,11 @@ export const LastNameContainer = styled('div', {
   marginTop: '-8rem',
   animation: `${onEnterUpBottom} 0.5s ease-in-out`,
 
-  '@bp1': {
+  '@bp3': {
     marginTop: '-4rem',
+  },
+
+  '@bp1': {
+    marginTop: '-2rem',
   },
 });

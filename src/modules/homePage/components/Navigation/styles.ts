@@ -22,10 +22,7 @@ export const MenuWrapper = styled('div', {
   '@bp3': {
     justifyContent: 'center',
     textAlign: 'center',
-  },
-
-  '@bp1': {
-    marginTop: '1rem',
+    marginTop: '2rem',
   },
 });
 

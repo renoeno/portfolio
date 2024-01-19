@@ -38,4 +38,8 @@ export const MenuLink = styled('a', {
     //left: 25%;
     width: '80%',
   },
+
+  '@bp2': {
+    fontSize: '$md',
+  },
 });

@@ -11,7 +11,7 @@ export function HomeSubtitle() {
   return (
     <SubtitleWrapper>
       <SubtitleContainer>
-        <Heading font="subHeading" size={{ '@initial': 'md', '@bp3': 'sm' }} decoration="italic">
+        <Heading font="subHeading" size={{ '@initial': 'md', '@bp2': 'xsm' }} decoration="italic">
           <FirstQuoteSubtitleContainer css={{ animationDelay: '0.125s' }}>
             Interseções entre
           </FirstQuoteSubtitleContainer>
