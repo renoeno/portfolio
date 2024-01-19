@@ -15,10 +15,10 @@ export function HomeTitle() {
         <HomeSubtitle />
         <TitleContainer>
           <FirstNameContainer css={{ animationDelay: '0.125s' }}>
-            <Heading size={{ '@initial': 'xl', '@bp3': 'lg', '@bp0': 'md' }}>reno</Heading>
+            <Heading size={{ '@initial': 'xxhg', '@bp3': 'xhg', '@bp0': 'lg' }}>reno</Heading>
           </FirstNameContainer>
           <LastNameContainer css={{ animationDelay: '0.25s' }}>
-            <Heading size={{ '@initial': 'xl', '@bp3': 'lg', '@bp0': 'md' }}>almeida</Heading>
+            <Heading size={{ '@initial': 'xxhg', '@bp3': 'xhg', '@bp0': 'lg' }}>almeida</Heading>
           </LastNameContainer>
         </TitleContainer>
         <Navigation />

@@ -16,8 +16,10 @@ export const fontSizes = {
   lg: '2rem',
   xl: '2.5rem',
   xxl: '3rem',
-  '1xxxl': '5rem',
+  '1xxxl': '5.075rem',
   '2xxxl': '9rem',
+  xhg: '13.125rem',
+  xxhg: '19.5rem',
 };
 
 export const fontWeights = {

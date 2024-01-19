@@ -60,22 +60,33 @@ export const TitleContainer = styled('div', {
 
 export const FirstNameContainer = styled('div', {
   position: 'absolute',
+  left: '-6.125rem',
+  top: '-4.875rem',
   animation: `${onEnterUpBottom} 0.5s ease-in-out`,
 
   '@bp3': {
-    position: 'relative',
+    left: '-3.125rem',
+    top: '-1.75rem',
+  },
+
+  '@bp0': {
+    left: '-1.4rem',
+    top: '4.45rem',
   },
 });
 
 export const LastNameContainer = styled('div', {
   position: 'absolute',
-  left: '13.5rem',
+  left: '20rem',
   top: '4.875rem',
   animation: `${onEnterUpBottom} 0.5s ease-in-out`,
 
   '@bp3': {
-    position: 'relative',
-    left: 0,
-    top: 0,
+    left: '14.575rem',
+  },
+
+  '@bp0': {
+    left: '5.35rem',
+    top: '6.875rem',
   },
 });
